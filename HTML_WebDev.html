@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Web Dev</title>
+    <link rel="stylesheet" href="CSS_WebDev.css" />
+  </head>
+  <body>
+    <h1>HTML Notes</h1>
+
+    <h2>Basic Structure</h2>
+    <p>Every HTML file should start with a <code>&lt;!DOCTYPE html&gt;</code> declaration and contain an <code>&lt;html&gt;</code> element. The <code>&lt;head&gt;</code> element provides essential information for the page, including the <code>&lt;title&gt;</code>.</p>
+
+    <h2>HTML Elements, Tags, and Indentations</h2>
+    <p>HTML elements are building blocks of web pages. Tags, enclosed in angle brackets, define elements. Proper indentation enhances readability.</p>
+
+    <h3>Text Formatting</h3>
+    <ul>
+        <li><code>&lt;b&gt;</code>: Bold text</li>
+        <li><code>&lt;i&gt;</code>: Italic text</li>
+        <li><code>&lt;u&gt;</code>: Underlined text</li>
+        <li><code>&lt;s&gt;</code>: Strikethrough text</li>
+    </ul>
+
+    <h3>Paragraphs and Line Breaks</h3>
+    <p>Use <code>&lt;p&gt;</code> for paragraphs and <code>&lt;br&gt;</code> for line breaks.</p>
+
+    <h3>Lists</h3>
+    <ul>
+        <li>Unordered lists use <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code>.</li>
+        <li>Ordered lists use <code>&lt;ol&gt;</code> and <code>&lt;li&gt;</code>.</li>
+    </ul>
+
+    <h3>Links and Images</h3>
+    <p>Use the <code>&lt;a&gt;</code> tag to create hyperlinks and the <code>&lt;img&gt;</code> tag to include images. Attributes like <code>href</code> and <code>src</code> are used for links and images respectively.</p>
+
+    <h2>Styles and Attributes</h2>
+    <p>Attributes like <code>class</code> and <code>id</code> help organize elements, while <code>style</code> allows inline CSS for presentation.</p>
+
+    <h3>Comments</h3>
+    <p>HTML comments (<code>&lt;!-- --&gt;</code>) are useful for documentation or temporarily removing code.</p>
+
+    <h2>Forms and User Input</h2>
+    <p>The <code>&lt;form&gt;</code> and <code>&lt;input&gt;</code> elements allow user interaction. Inputs support various types like text, number, checkbox, radio, and more. Validation attributes ensure correct data submission.</p>
+
+    <h3>Basic Form Example</h3>
+    <form>
+        <label for="text">Text:</label>
+        <input type="text" id="text" minlength="3" maxlength="30"><br>
+
+        <label for="number">Number:</label>
+        <input type="number" id="number" min="1" max="100"><br>
+
+        <label for="checkbox">Checkbox:</label>
+        <input type="checkbox" id="checkbox"><br>
+
+        <label for="radio">Radio:</label>
+        <input type="radio" id="radio"><br>
+
+        <label for="textarea">Long Text:</label>
+        <textarea id="textarea" rows="4" cols="50"></textarea><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>HTML5 Semantic Elements</h2>
+    <p>HTML5 introduced semantic elements to enhance the meaning of web pages. These include:</p>
+    <ul>
+        <li><code>&lt;header&gt;</code>: Defines introductory content or navigation links.</li>
+        <li><code>&lt;nav&gt;</code>: Specifies navigation links.</li>
+        <li><code>&lt;main&gt;</code>: Represents the main content of the page.</li>
+        <li><code>&lt;section&gt;</code>: Groups related content.</li>
+        <li><code>&lt;article&gt;</code>: Contains self-contained content.</li>
+        <li><code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code>: Represent images or diagrams and their captions.</li>
+        <li><code>&lt;footer&gt;</code>: Defines footer content.</li>
+    </ul>
+
+    <h3>Semantic Structure Example</h3>
+    <code>
+        &lt;body&gt;
+        &lt;header&gt;
+            &lt;nav&gt;&lt;/nav&gt;
+        &lt;/header&gt;
+        &lt;main&gt;
+            &lt;section&gt;
+                &lt;article&gt;
+                    &lt;figure&gt;
+                        &lt;figcaption&gt;&lt;/figcaption&gt;
+                    &lt;/figure&gt;
+                &lt;/article&gt;
+            &lt;/section&gt;
+        &lt;/main&gt;
+        &lt;footer&gt;&lt;/footer&gt;
+        &lt;/body&gt;
+    </code>
+</body>
+</html>
+

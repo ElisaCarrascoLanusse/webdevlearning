@@ -1,0 +1,128 @@
+/* Basic CSS Syntax! */
+/* CSS is used to style HTML pages via the <link> element in the <head> of an HTML document. */
+
+/* Selectors and Declarations */
+/* Select elements by name */
+h1 {
+    color: blue;
+    font-family: sans-serif;
+}
+
+/* Select elements by class */
+.card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Select elements by id */
+#main-header {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+}
+
+/* Grouping Selectors */
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+/* Combinators */
+/* Descendant selector */
+section p {
+    line-height: 1.6;
+}
+
+/* Child selector */
+ul > li {
+    list-style-type: square;
+}
+
+/* Adjacent sibling selector */
+h1 + p {
+    font-style: italic;
+}
+
+/* General sibling selector */
+h1 ~ p {
+    color: gray;
+}
+
+/* Colors */
+body {
+    background-color: #fff; /* Hexadecimal */
+    color: rgb(51, 51, 51); /* RGB */
+}
+
+/* Font Families and Text Formatting */
+/* Supported font families: cursive, fantasy, monospace, serif, sans-serif */
+p {
+    font-family: "Arial", sans-serif;
+    text-align: justify;
+    text-decoration: underline;
+}
+
+/* Sizing Elements */
+img {
+    width: 100px; /* Absolute units */
+    height: auto;
+}
+
+.container {
+    width: 80%; /* Relative units */
+    margin: 0 auto; /* Center alignment */
+}
+
+/* Backgrounds */
+header {
+    background: url('header-bg.jpg') no-repeat center/cover;
+}
+
+/* Shorthand Properties */
+border {
+    border: 1px solid #ccc; /* Shorthand for border width, style, and color */
+}
+
+/* Box Model */
+.content {
+    padding: 10px; /* Padding Box */
+    border: 2px solid black; /* Border Box */
+    margin: 15px; /* Margin Box */
+    box-sizing: border-box; /* Includes padding and border in the width/height */
+}
+
+/* Display and Position */
+/* Display property determines how elements are shown */
+div {
+    display: block;
+}
+
+span {
+    display: inline;
+}
+
+/* Position property */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.relative-container {
+    position: relative;
+}
+
+.sticky-footer {
+    position: sticky;
+    bottom: 0;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
